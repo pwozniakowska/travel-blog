@@ -1,10 +1,10 @@
-baseurl = "http://www.kittyr.com/"
+baseurl = "https://www.kittyr.com/"
 languageCode = "en-uk"
 title = "Hugo Future Imperfect"
 theme = "future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
-disqusShortname = "kittyr-travel-website"
+disqusShortname = "kittyr"
 googleAnalytics = ""
 pluralizeListTitles = false
 
@@ -106,12 +106,6 @@ DefaultContentLanguage = "en"
                 weight = 2
 
             [[Languages.en.menu.main]]
-                name = "Itemized"
-                url = "/itemized/"
-                identifier = "fa fa-id-card-o"
-                weight = 2
-
-            [[Languages.en.menu.main]]
                 name = "Categories"
                 url = "/categories/"
                 identifier = "fa fa-sitemap"
@@ -136,12 +130,6 @@ DefaultContentLanguage = "en"
                 weight = 3
 
             [[Languages.fr.menu.main]]
-                name = "Itemized"
-                url = "/itemized/"
-                identifier = "fa fa-id-card-o"
-                weight = 4
-
-            [[Languages.fr.menu.main]]
                 name = "Catégories"
                 url = "/categories/"
                 identifier = "fa fa-sitemap"
@@ -158,29 +146,29 @@ DefaultContentLanguage = "en"
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github          = "jpescador/hugo-future-imperfect"
-  gitlab          = ""
-  stackoverflow   = "" # User Number
+  github          = "blgo/travel-blog"
+  gitlab          = "blgo"
+  stackoverflow   = "8573887" # User Number
   bitbucket       = ""
   jsfiddle        = ""
   codepen         = ""
   # Visual Art Communities
   deviantart      = ""
-  flickr          = "example"
+  flickr          = ""
   behance         = ""
   dribbble        = ""
   # Publishing Communities
   wordpress       = ""
   medium          = ""
   # Professional/Business Oriented Communities
-  linkedin        = "example"
+  linkedin        = "blas-gomez-49080155"
   foursquare      = ""
   xing            = ""
   slideshare      = ""
   # Social Networks
-  facebook        = "example"
+  facebook        = ""
   googleplus      = ""
-  reddit          = "example"
+  reddit          = ""
   quora           = ""
   youtube         = ""
   vimeo           = ""
@@ -188,13 +176,13 @@ DefaultContentLanguage = "en"
     # WeChat and QQ need testing.
     wechat          = ""
     qq              = "" # User ID Number
-  instagram       = "example"
+  instagram       = ""
   tumblr          = ""
-  twitter         = "example"
+  twitter         = "JBlasGomez"
   skype           = ""
   snapchat        = ""
-  pinterest       = "example"
-  telegram        = "example"
+  pinterest       = ""
+  telegram        = ""
   vine            = ""
   # Email
-  email           = "example"
+  email           = "jblas1989@gmail.com"
