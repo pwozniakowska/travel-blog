@@ -1,5 +1,5 @@
 +++
-author = ""
+author = "Paula Woźniakowska"
 categories = [""]
 date = ""
 description = ""
