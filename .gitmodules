@@ -1,0 +1,3 @@
+[submodule "site/themes/future-imperfect"]
+	path = site/themes/future-imperfect
+	url = https://github.com/jpescador/hugo-future-imperfect
