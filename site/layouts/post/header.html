@@ -1,0 +1,65 @@
+<header>
+    <div class="title">
+        {{ if $.Scratch.Get "h1" }}
+            <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+            {{ $.Scratch.Set "h1" false }}
+        {{ else }}
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ end }}
+        {{ with .Description }}
+            <p>{{ . }}</p>
+        {{ end }}
+    </div>
+    <div class="meta">
+        <time class="published"
+            datetime='{{ .Date }}'>
+            {{ default (i18n "date_format") | .Date.Format }}</time>
+        <span class="author">{{ .Params.author }}</span>
+        {{ if .Site.Params.includeReadingTime }}
+            <p>{{ .ReadingTime }} {{ i18n "postreadingtime" }}</p>
+        {{ end }}
+    </div>
+
+    {{ if isset .Params "tag" }}
+    <meta name="tag" content='{{ index .Params "tag" }}'>
+    <script  type="text/javascript">
+        function getTagFromMetaContent() { 
+        var metas = document.getElementsByTagName('meta'); 
+
+        for (var i=0; i<metas.length; i++) { 
+            if (metas[i].getAttribute("name") == "tag") { 
+                return metas[i].getAttribute("content"); 
+            } 
+        } 
+
+        return "";
+        } 
+
+        var xhr = new XMLHttpRequest();
+        var metatag = getTagFromMetaContent();
+        xhr.open("GET", "https://res.cloudinary.com/dkdpqgjhi/image/list/" + metatag + ".json", true);
+        xhr.onload = function (e) {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+            console.log(xhr.responseText);
+                var json = JSON.parse(xhr.responseText);
+                
+                for (var i=0; i<json.resources.length; i++) {
+                    var resource = json.resources[i];
+                    var url = "https://res.cloudinary.com/dkdpqgjhi/image/upload/c_scale,w_" + resource.width + ",h_" + resource.height + "/v" + resource.version + "/" + resource.public_id + "." + resource.format;
+                    var elem = document.createElement("img");
+                    elem.src = url;
+                document.getElementById("image").appendChild(elem);
+                }
+            } else {
+            console.error(xhr.statusText);
+            }
+        }
+        };
+        xhr.onerror = function (e) {
+        console.error(xhr.statusText);
+        };
+        xhr.send(null);    
+    </script>
+    {{ end }}
+</header>

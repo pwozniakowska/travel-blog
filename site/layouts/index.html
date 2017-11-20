@@ -1,0 +1,48 @@
+
+{{ partial "header" . }}
+    {{ $.Scratch.Set "shareNav" true }}
+    {{ partial "navbar" . }}
+    <!-- Main -->
+    <div id="main">
+
+  <!-- Posts List -->
+  <section id="recent-posts">
+    <div class="mini-posts">
+      <div class="posts-container">
+        {{ $.Scratch.Set "recentPosts" .Site.Pages }}
+
+        {{ with .Site.Params.postAmount.sidebar }}
+          {{ $.Scratch.Set "postLimit" . }}
+        {{ else }}
+          {{ $.Scratch.Set "postLimit" 5 }}
+        {{ end }}
+
+        {{ range first ($.Scratch.Get "postLimit") (where ($.Scratch.Get "recentPosts") "Type" "post") }}
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h3>
+              {{ $.Scratch.Set "dateType" .Date }}
+              <time class="published" datetime='{{ .Date }}'>
+              {{ default (i18n "date_format") | .Date.Format }}</time>
+            </header>
+            {{ .Render "featured" }}
+          </article>
+        {{ end }}
+      </div>
+
+   </div>
+       {{ if ge (len (where .Site.Pages "Type" "post")) ($.Scratch.Get "postLimit") }}
+        <a href=
+          {{ with .Site.Params.viewMorePostLink }}
+            {{ . }}
+          {{ else }}
+            "/{{ $.Site.Language.Lang }}/post/"
+          {{ end }}
+        class="button">{{ i18n "see_more" }}</a>
+      {{ end }}
+  </section>
+
+    </div>
+{{ partial "footer" . }}
