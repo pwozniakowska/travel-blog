@@ -1,10 +1,10 @@
-baseurl = "https://blgo-future-imperfect-demo.netlify.com/"
-languageCode = "en-us"
+baseurl = "http://www.kittyr.com/"
+languageCode = "en-uk"
 title = "Hugo Future Imperfect"
-theme = "hugo-future-imperfect"
+theme = "future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
-disqusShortname = "shortname"
+disqusShortname = "kittyr-travel-website"
 googleAnalytics = ""
 pluralizeListTitles = false
 
@@ -12,13 +12,13 @@ pluralizeListTitles = false
   # Sets the meta tag description
   description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
   # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Future Imperfect"
+  navbarTitle          = "Kittyr adventures around the world"
   # Sets where "View More Posts" links
   viewMorePostLink     = "/blog/"
 
 # Optional Params
   # Sets navbarTitle to match the section of the website
-  dynamicTitles        = true
+  dynamicTitles        = false
   # Sets RSS icons to appear on the sidebar with the social media buttons
   rssAppearAtTop       = true
   rssAppearAtBottom    = true
@@ -28,7 +28,7 @@ pluralizeListTitles = false
   # Sets Categories to sort by number of posts instead of alphabetical
   categoriesByCount    = true
   # Sets Estimated Reading Time to appear in post headers
-  includeReadingTime   = true
+  includeReadingTime   = false 
   # Sets the Favicon and Version for the site. Default support is for
   # apple-touch-icon-precomposed.png, favicon.png, favicon.ico, and mstile.png.
   # These are stored in the favicon folder. See the following for more information:
@@ -59,11 +59,11 @@ pluralizeListTitles = false
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
 [params.intro]
-  header    = "Hugo Future Imperfect"
+  header    = "Kittr adventures around the world"
 
-  paragraph = "Another fine responsive site template by <a href=\"http://html5up.net\">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i>"
+  paragraph = "Kittyr around the world!  <a href=\"http://html5up.net\">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i>"
 
-  about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
+  about     = "About! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
 
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
@@ -74,7 +74,7 @@ pluralizeListTitles = false
     # Sets Image to be Future Imperfect's hexagon
     imperfect = true
     width     = ""
-    alt       = "Hugo Future Imperfect"
+    alt       = "Kittyr pic here"
 
 [params.postAmount]
 # Sets the number of recent posts to show in the sidebar. The default value is 5.
