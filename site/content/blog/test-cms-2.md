@@ -8,7 +8,7 @@ type: post
 author: predefined author
 featuredpath: cloudinary
 featuredalt: Image hosted by Cloudinary
-draft: true 
+draft: false
 categories: Test
 ---
 grant-lemons-80424_ypymzr
