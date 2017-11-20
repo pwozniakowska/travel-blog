@@ -138,6 +138,7 @@
 					// .on('-large', function() {
 						// $intro.prependTo($sidebar);
 					// });
+			$sidebar.appendTo($main);
 
 	});
 

@@ -9,5 +9,6 @@ author: predefined author
 featuredpath: cloudinary
 featuredalt: Image hosted by Cloudinary
 draft: false
+Categories: [Test1, Test2, Test3]
 ---
 grant-lemons-80424_ypymzr
