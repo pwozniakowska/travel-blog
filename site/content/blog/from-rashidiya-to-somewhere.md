@@ -16,7 +16,7 @@ type: post
 author: Kitty R.
 featuredalt: Image hosted by Cloudinary
 ---
-Kitty R. and Grandpa T. are looking for the master of qwan ki do in Rashidia to get back (after 12 years) the violin of a kung fu master from Tetouan. The Master is not found, but a clue is caught, and a letter left.
+Kitty R. and Grandpa T. are looking for the master of qwan ki do in Ar-Rashidiya to get back (after 12 years) the violin of a kung fu master from Tetouan. The Master is not found, but a clue is caught, and a letter left.
 
 The cold of the region can be found in the signs. Kitty R. and Grandpa T. continue their journey without a plan. On the bridge leading to outside town, they hear a voice from down the river "Salam! Ça va?" and here it is: an invitation for tea. A homeless pebble on palm sticks and inside: A Man and His Sheep. We drink sweet moroccan coffee and eat salty almonds. The man is sitting with his sheep, two dogs and watching his non-growing vegetables on red African soil. From time to time he smokes hashish ("it’s better to have a dog as a friend than a friend for a dog"). Soon Kitty R. and Grandpa T. are persuaded to visit the Man’s family living nearby. In a thankful manner they decide to bring a bag of candies, a kilo of rice and a kilo of sugar (a delight for everyone).
 
